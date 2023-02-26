@@ -1,5 +1,5 @@
 ---
-title: Nathan Lin 林宣佑
+title: Nathan Lin | 林宣佑
 role: Software Engineer
 avatar_filename: avatar.jpg
 bio: I am passionate about devops, distributed systems, algorithms, software
@@ -24,6 +24,10 @@ social:
 organizations:
   - name: Ubiquiti
     url: https://ui.com/
+  - name: Technical Blog
+    url: https://algodoc.star-67.com/
+  - name: Personal Blog
+    url: https://blog.star-67.com/
 education:
   courses: []
 superuser: true

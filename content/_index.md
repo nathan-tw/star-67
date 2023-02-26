@@ -25,6 +25,12 @@ sections:
         - name: AWS
           icon: aws
           icon_pack: fab
+        - name: Git
+          icon: git-alt
+          icon_pack: fab
+        - name: Database
+          icon: database
+          icon_pack: fas
 
   - block: experience
     id: experience
@@ -41,11 +47,11 @@ sections:
       items:
         - title: Cloud Backend Engineer
           company: Ubiquiti
-          company_url: 'https://ui.com'
+          company_url: "https://ui.com"
           company_logo: ubiquiti
           location: Taipei
-          date_start: '2022-02-20'
-          date_end: ''
+          date_start: "2022-02-20"
+          date_end: ""
           description: |2-
               * Email: Service for sending email. Involved in features such as queuing, asynchronous sending, rate limiting and yaml/lua template rendering. Built an internal app to handle sending activities.
               * IP Data ETL: Design ETL workflow for ip related data for building an ip reputation system. The extraction features flexible settings by jinja2 template engine. including email sending activities, redis connection count, threads count, database storage, etc.
@@ -54,24 +60,24 @@ sections:
               * Infra Configuration: Configure infrastructures with Terraform. Design and develop config checking scripts in continuous integration process.
         - title: Site Reliability Engineer Intern
           company: Garmin
-          company_url: 'https://garmin.com'
+          company_url: "https://garmin.com"
           company_logo: garmin
           location: Taipei
-          date_start: '2021-06-01'
-          date_end: '2021-09-01'
+          date_start: "2021-06-01"
+          date_end: "2021-09-01"
           description: |2-
               * kubernetes: Install kubernetes cluster on bare metal servers using kubeadm.
               * Load Testing: Design a load testing service with Apache Jmeter. Integrate with services continuous integration
         - title: Software Testing Intern
           company: KKStream
-          company_url: 'https://www.kkstream.com/en'
+          company_url: "https://www.kkstream.com/en"
           location: Taipei
-          date_start: '2020-09-01'
-          date_end: '2021-05-30'
+          date_start: "2020-09-01"
+          date_end: "2021-05-30"
           description: |2-
               * CICD: Deisgn CICD pipeline, including version tagging, service deploying and other stages for several projects.
     design:
-      columns: '2'
+      columns: "2"
   - block: contact
     id: contact
     content:
@@ -81,5 +87,5 @@ sections:
       # Automatically link email and phone or display as text?
       autolink: true
     design:
-      columns: '2'
+      columns: "2"
 ---

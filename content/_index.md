@@ -42,7 +42,7 @@ sections:
         - title: Cloud Backend Engineer
           company: Ubiquiti
           company_url: 'https://ui.com'
-          company_logo: org-ubiquiti
+          company_logo: ubiquiti
           location: Taipei
           date_start: '2022-02-20'
           date_end: ''
@@ -55,20 +55,19 @@ sections:
         - title: Site Reliability Engineer Intern
           company: Garmin
           company_url: 'https://garmin.com'
-          company_logo: org-garmin
+          company_logo: garmin
           location: Taipei
           date_start: '2021-06-01'
-          date_end: 2021-09-01'
+          date_end: '2021-09-01'
           description: |2-
               * kubernetes: Install kubernetes cluster on bare metal servers using kubeadm.
               * Load Testing: Design a load testing service with Apache Jmeter. Integrate with services continuous integration
         - title: Software Testing Intern
           company: KKStream
           company_url: 'https://www.kkstream.com/en'
-          company_logo: org-kkstream
           location: Taipei
           date_start: '2020-09-01'
-          date_end: 2021-05-30'
+          date_end: '2021-05-30'
           description: |2-
               * CICD: Deisgn CICD pipeline, including version tagging, service deploying and other stages for several projects.
     design:

@@ -53,11 +53,13 @@ sections:
           date_start: "2022-02-20"
           date_end: ""
           description: |2-
-              * Email: Service for sending email. Involved in features such as queuing, asynchronous sending, rate limiting and yaml/lua template rendering. Built an internal app to handle sending activities.
-              * IP Data ETL: Design ETL workflow for ip related data for building an ip reputation system. The extraction features flexible settings by jinja2 template engine. including email sending activities, redis connection count, threads count, database storage, etc.
-              * Performance Tuning: Promote services optimization with developers by scanning database slow query, recording cache hit rate and monitoring services loading.
-              * CICD: Development and execution of scripts to maintain the continuous integration and delivery of the systems. Coordination with application owners, development and supporting teams.
-              * Infra Configuration: Configure infrastructures with Terraform. Design and develop config checking scripts in continuous integration process.
+              * **Email**: Maintained a high-performance email service that facilitates asynchronous email sending, rate limiting, and advanced template rendering using YAML/Lua templates.
+              * **Rate Limit**: Designed and implemented a highly effective rate limit mechanism for email service to prevent misdelivered emails, which resulted in a significant reduction in the misdelivered email rate by 2-5% daily.
+              * **Configuration Optimization**: Designed and implemented a configuration checking stage during continuous integration, resulting in an 80% reduction in misconfigurations.
+              * IP Data ETL: Designed and implemented an ETL workflow for processing IP-related data to build an IP reputation system, resulting in improved accuracy and efficiency.
+              * **Performance Tuning**: Promoted services optimization with developers by monitoring services loading and scanning database slow query to improve overall system performance.
+              * **Infra Configuration**: Configured infrastructures using Terraform for efficient and scalable deployment of resources in a cloud-based environment.
+              * **Risk Session Detection**: Designed and implemented an anomaly detection mechanism for login session context using various user information such as IP address, user agent, and login time.
         - title: Site Reliability Engineer Intern
           company: Garmin
           company_url: "https://garmin.com"
@@ -66,8 +68,8 @@ sections:
           date_start: "2021-06-01"
           date_end: "2021-09-01"
           description: |2-
-              * kubernetes: Install kubernetes cluster on bare metal servers using kubeadm.
-              * Load Testing: Design a load testing service with Apache Jmeter. Integrate with services continuous integration
+              * **kubernetes**: Install kubernetes cluster on bare metal servers using kubeadm.
+              * **Load Testing**: Design a load testing service with Apache Jmeter. Integrate with services continuous integration
         - title: Software Testing Intern
           company: KKStream
           company_url: "https://www.kkstream.com/en"
@@ -75,7 +77,7 @@ sections:
           date_start: "2020-09-01"
           date_end: "2021-05-30"
           description: |2-
-              * CICD: Deisgn CICD pipeline, including version tagging, service deploying and other stages for several projects.
+              * **CICD**: Deisgn CICD pipeline, including version tagging, service deploying and other stages for several projects.
     design:
       columns: "2"
   - block: contact

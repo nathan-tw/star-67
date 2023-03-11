@@ -85,7 +85,7 @@ sections:
     content:
       title: Contact
       subtitle:
-      email: linnom987321@gmail.com
+      email: nathan.lin@star-67.com
       # Automatically link email and phone or display as text?
       autolink: true
     design:

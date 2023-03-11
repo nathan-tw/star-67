@@ -1,7 +1,7 @@
 ---
 title: Nathan Lin | 林宣佑
 role: Software Engineer
-avatar_filename: avatar.jpg
+avatar_filename: avatar2.jpg
 bio: I am passionate about devops, distributed systems, algorithms, software
   engineering, and cloud infrastructure. My love for these topics drives me to
   continuously acquire new knowledge and skills, which I use to create
@@ -34,7 +34,7 @@ superuser: true
 last_name: Lin
 highlight_name: true
 first_name: Nathan
-email: linnom987321@gmail.com
+email: nathan.lin@star-67.com
 ---
 I am passionate about devops, distributed systems, algorithms, software
 engineering, and cloud infrastructure. My love for these topics drives me to

@@ -36,8 +36,5 @@ highlight_name: true
 first_name: Nathan
 email: nathan.lin@star-67.com
 ---
-I am passionate about devops, distributed systems, algorithms, software
-engineering, and cloud infrastructure. My love for these topics drives me to
-continuously acquire new knowledge and skills, which I use to create
-innovative solutions to complex problems.
+Actually, the name of the blog has nothing to do with stars. During college, I lived the longest at 67 Xinguang Road and loved my time there. So I wanted to name my blog after it, but if I named it New67 or Light67, it would sound silly. Therefore, I decided to name it Star67, also known as Xing Guang Lu 67 in Chinese.
 {style="text-align: justify;"}

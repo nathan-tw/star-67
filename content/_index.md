@@ -51,7 +51,7 @@ sections:
           company_logo: ubiquiti
           location: Taipei
           date_start: "2022-02-20"
-          date_end: ""
+          date_end: "2024-05-15"
           description: |2-
               * **Email**: Maintained a high-performance email service that facilitates asynchronous email sending, rate limiting, and advanced template rendering using YAML/Lua templates.
               * **Rate Limit**: Designed and implemented a highly effective rate limit mechanism for email service to prevent misdelivered emails, which resulted in a significant reduction in the misdelivered email rate by 2-5% daily.

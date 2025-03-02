@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hsuan Yu Lin - Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #2962ff;
+      --primary-light: #eef3fd;
+      --dark-color: #343a40;
+      --text-color: #212529;
+      --secondary-color: #6c757d;
+      --light-gray: #f8f9fa;
+      --border-color: #dee2e6;
+      --card-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      --font-serif: Georgia, "Times New Roman", Times, serif;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--text-color);
+      line-height: 1.65;
+      background-color: #fff;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    /* Header section */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--border-color);
+      background-color: #fff;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--dark-color);
+      text-decoration: none;
+    }
+
+    .navbar-nav {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .nav-link {
+      color: var(--dark-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover {
+      color: var(--primary-color);
+    }
+
+    /* Hero section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: var(--light-gray);
+    }
+
+    .portrait {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .hero-role {
+      font-size: 1.2rem;
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .contact-info a {
+      color: var(--dark-color);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    .contact-info a:hover {
+      background-color: var(--primary-light);
+      color: var(--primary-color);
+    }
+
+    /* Main content */
+    .main-content {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .main-content {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-heading {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--dark-color);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+
+    .section-heading::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100px;
+      height: 3px;
+      background-color: var(--primary-color);
+    }
+
+    /* Cards */
+    .card {
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+      color: var(--dark-color);
+    }
+
+    .card-subtitle {
+      color: var(--secondary-color);
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .card-text {
+      margin-bottom: 0.75rem;
+      color: var(--secondary-color);
+      font-style: italic;
+    }
+
+    .card-location {
+      font-style: italic;
+      color: var(--secondary-color);
+    }
+
+    .card-date {
+      color: var(--secondary-color);
+      font-weight: 500;
+    }
+
+    .card-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+
+    .card-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    /* Project cards */
+    .project-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-title {
+      font-weight: bold;
+    }
+
+    .project-title a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .project-title a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      margin-top: 0;
+    }
+
+    @media (max-width: 767px) {
+      .sidebar {
+        margin-top: 0;
+      }
+    }
+
+    .interest-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .interest-tag {
+      background-color: var(--primary-light);
+      color: var(--primary-color);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+
+    /* Education section */
+    .education-card {
+      margin-bottom: 1rem;
+    }
+
+    /* Skills section */
+    .skill-category {
+      margin-bottom: 1rem;
+    }
+
+    .skill-category-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: var(--dark-color);
+    }
+
+    .skill-items {
+      color: var(--secondary-color);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--dark-color);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .social-icon {
+      color: #fff;
+      font-size: 1.5rem;
+      transition: color 0.2s;
+    }
+
+    .social-icon:hover {
+      color: var(--primary-light);
+    }
+
+    .copyright {
+      font-size: 0.9rem;
+      color: #adb5bd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#" class="navbar-brand">Hsuan Yu Lin</a>
+    <ul class="navbar-nav">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero" id="about">
+    <div class="portrait">HL</div>
+    <h1>Hsuan Yu Lin</h1>
+    <div class="hero-role">Software Engineer & DevOps Specialist</div>
+    <div class="contact-info">
+      <a href="mailto:nathan.lin0213@gmail.com">
+        <i class="fas fa-envelope"></i>
+        nathan.lin0213@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/hsuan-yu-lin-nathan/">
+        <i class="fab fa-linkedin"></i>
+        LinkedIn
+      </a>
+      <a href="https://github.com/nathan-tw">
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Left column -->
+    <div class="main-column">
+      <!-- Experience section -->
+      <section class="section" id="experience">
+        <h2 class="section-heading">Experience</h2>
+        
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Software Engineer -- System Testing</h3>
+            <div class="card-subtitle">
+              <span>Oracle</span>
+              <span class="card-date">May 2024 - Present</span>
+            </div>
+            <div class="card-text">OCI, Oracle Database, Python, IPv6</div>
+            <div class="card-location">Taipei, Taiwan</div>
+            <ul class="card-list">
+              <li>Covered 20+ cluster network testing issue including node failover, IPv6 neighbor discovery and SELinux.</li>
+              <li>Optimized user experience by filing bugs and feature enhancements like fixed ports data transfer.</li>
+              <li>Automated OCI exaDB-D database lifecycle management testing flow using Python.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">DevOps Engineer</h3>
+            <div class="card-subtitle">
+              <span>Ubiquiti</span>
+              <span class="card-date">Feb 2022 - May 2024</span>
+            </div>
+            <div class="card-text">AWS, ECS, Terraform, Go, Python, Email, Rate limit</div>
+            <div class="card-location">Taipei, Taiwan</div>
+            <ul class="card-list">
+              <li>Achieved a 90% reduction in bounce rate through email tracking and DNS validation.</li>
+              <li>Significantly reduced spam mail by 80% through the implementation of a rate limiter with various dimensions.</li>
+              <li>Reduced deployment time by 20% through CI/CD implementation with AWS CodePipeline and blue-green deployment.</li>
+              <li>Successfully managed over 10+ environments by configuring cloud-based infrastructures using Terraform.</li>
+              <li>Achieved a 50% improvement in response time by optimizing database query through analysis of slow queries.</li>
+              <li>Delivered a 30% reduction in unauthorized access attempts and a 25% increase in user satisfaction by integrating door access with facial recognition technology and Apple Wallet passes.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">DevOps Engineer (part time)</h3>
+            <div class="card-subtitle">
+              <span>Swif</span>
+              <span class="card-date">Nov 2023 - Feb 2024</span>
+            </div>
+            <div class="card-text">GCP, Kubernetes, Helm, ElasticSearch, SSL</div>
+            <div class="card-location">Remote, USA</div>
+            <ul class="card-list">
+              <li>Achieved a 99.9% uptime rate by effectively managing a Kubernetes cluster deployed on GKE.</li>
+              <li>Maintained strict industry security standards by overseeing 50+ SSL certificates with ACME.</li>
+              <li>Spearheaded efforts with Vanta to resolve 20+ security issues, crucial in securing the SOC2 certificate and ensuring a compliant infrastructure.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">DevOps Engineer Intern</h3>
+            <div class="card-subtitle">
+              <span>Garmin</span>
+              <span class="card-date">Jul 2021 - Sep 2021</span>
+            </div>
+            <div class="card-text">Kubernetes, Jmeter, Gitlab-CI, Java</div>
+            <div class="card-location">Taipei, Taiwan</div>
+            <ul class="card-list">
+              <li>Boosted resource utilization efficiency by 30% by building a Kubernetes cluster on local servers using Kubeadm.</li>
+              <li>Covered 80% of RESTful APIs by seamlessly integrating a load testing service with JMeter into our CI pipeline.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">DevOps Engineer Intern</h3>
+            <div class="card-subtitle">
+              <span>KKStream</span>
+              <span class="card-date">Sep 2020 - Jun 2021</span>
+            </div>
+            <div class="card-text">AWS, Lambda, Terraform, Gitlab-CI</div>
+            <div class="card-location">Taipei, Taiwan</div>
+            <ul class="card-list">
+              <li>Mitigated 70% of hardware-related errors for migration by transitioning from a local server to an AWS Lambda.</li>
+              <li>Performed Swift UI testing with XCUI framework to enhance application validation, reducing manual testing efforts by 80%.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Research Intern</h3>
+            <div class="card-subtitle">
+              <span>Academia Sinica</span>
+              <span class="card-date">Jul 2020 - Sep 2020</span>
+            </div>
+            <div class="card-text">ML, Static/Dynamic Analysis, Cuckoo, Windows PE file</div>
+            <div class="card-location">Taipei, Taiwan</div>
+            <ul class="card-list">
+              <li>Obtained a 95% accuracy rate in Windows malware detection via the comprehensive integration of dynamic and static analysis methodologies, leveraging the predictive capabilities of both LightGBM and LSTM models.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section class="section" id="projects">
+        <h2 class="section-heading">Projects</h2>
+        
+        <div class="card">
+          <div class="card-body">
+            <div class="project-header">
+              <h3 class="project-title">
+                <a href="https://github.com/nathan-tw/rate-limiter">Rate Limiter</a>
+              </h3>
+              <span class="card-date">Nov 2023</span>
+            </div>
+            <div class="card-text">Go, Lua, Redis, Docker</div>
+            <ul class="card-list">
+              <li>Developed a rate-limiting middleware for routing, employing sliding window and fixed window strategies.</li>
+              <li>Offered both synchronous and asynchronous testing options while containerizing the project for simplified setup.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <div class="project-header">
+              <h3 class="project-title">
+                <a href="https://github.com/nathan-tw/tradingview-go">Crypto Trading Bot</a>
+              </h3>
+              <span class="card-date">Jan 2021</span>
+            </div>
+            <div class="card-text">Go, Gin, Heroku, TradingView, Terraform</div>
+            <ul class="card-list">
+              <li>Developed a transaction system for crypto trading, receiving webhooks from TradingView.</li>
+              <li>Deployed application to Linux virtual machines on both Heroku and Linode platforms.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <div class="project-header">
+              <h3 class="project-title">
+                <a href="https://github.com/nathan-tw/vector-space-model">Vector Space Model</a>
+              </h3>
+              <span class="card-date">Oct 2020</span>
+            </div>
+            <div class="card-text">Python, Numpy</div>
+            <ul class="card-list">
+              <li>Developed a vector space model integrating Euclidean distance and cosine similarity for distance calculation.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Education section -->
+      <section class="section">
+        <h2 class="section-heading">Education</h2>
+        <div class="card education-card">
+          <div class="card-body">
+            <h3 class="card-title">National Chengchi University</h3>
+            <div class="card-date">Sep 2017 - Jun 2021</div>
+            <div class="card-text">Bachelor of Science in Management Information Systems</div>
+            <div class="card-location">Taipei, Taiwan</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section -->
+      <section class="section" id="skills">
+        <h2 class="section-heading">Technical Skills</h2>
+        <div class="card">
+          <div class="card-body">
+            <div class="skill-category">
+              <div class="skill-category-title">DevOps</div>
+              <div class="skill-items">CI/CD (Gitlab, Github, AWS Codepipeline, Argo, Jenkins), Kubernetes, Docker, Grafana, ElasticSearch, Jmeter</div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-category-title">Languages</div>
+              <div class="skill-items">Python, Go, C, C++, Java, JavaScript, SQL, Bash</div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-category-title">Web</div>
+              <div class="skill-items">Gin (Go), Flask (Python), React, Nginx, DNS, Mail Server</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interests section -->
+      <section class="section">
+        <h2 class="section-heading">Research Interests</h2>
+        <div class="card">
+          <div class="card-body">
+            <div class="interest-tags">
+              <span class="interest-tag">DevOps</span>
+              <span class="interest-tag">Cloud Infrastructure</span>
+              <span class="interest-tag">Containerization</span>
+              <span class="interest-tag">Automation</span>
+              <span class="interest-tag">Cybersecurity</span>
+              <span class="interest-tag">CI/CD</span>
+              <span class="interest-tag">ML Applications</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="mailto:nathan.lin0213@gmail.com" class="social-icon">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://linkedin.com/in/hsuan-yu-lin-nathan/" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/nathan-tw" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="copyright">
+      © 2025 Hsuan Yu Lin • Built with HTML & CSS
+    </div>
+  </footer>
+</body>
+</html>
